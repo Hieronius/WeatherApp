@@ -11,6 +11,7 @@
 		DD966A6C2BAA838D00F3B014 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD966A6B2BAA838D00F3B014 /* SceneDelegate.swift */; };
 		DD966A6E2BAA838D00F3B014 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD966A6D2BAA838D00F3B014 /* WeatherViewController.swift */; };
 		DD966A732BAA839100F3B014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD966A722BAA839100F3B014 /* Assets.xcassets */; };
+		DD966A882BAA90AA00F3B014 /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD966A872BAA90AA00F3B014 /* GenericViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		DD966A6D2BAA838D00F3B014 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		DD966A722BAA839100F3B014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD966A772BAA839100F3B014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD966A872BAA90AA00F3B014 /* GenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		DD966A802BAA870300F3B014 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				DD966A862BAA908100F3B014 /* CustomElements */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -131,6 +134,14 @@
 				DD966A6D2BAA838D00F3B014 /* WeatherViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		DD966A862BAA908100F3B014 /* CustomElements */ = {
+			isa = PBXGroup;
+			children = (
+				DD966A872BAA90AA00F3B014 /* GenericViewController.swift */,
+			);
+			path = CustomElements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +215,7 @@
 			files = (
 				DD966A6E2BAA838D00F3B014 /* WeatherViewController.swift in Sources */,
 				DD966A6A2BAA838D00F3B014 /* AppDelegate.swift in Sources */,
+				DD966A882BAA90AA00F3B014 /* GenericViewController.swift in Sources */,
 				DD966A6C2BAA838D00F3B014 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
