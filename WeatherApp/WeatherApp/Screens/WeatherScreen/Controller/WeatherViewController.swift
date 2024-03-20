@@ -1,6 +1,9 @@
 import UIKit
 
-class WeatherViewController: UIViewController {
+final class WeatherViewController: GenericViewController<WeatherView> {
+    
+    
+    // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()

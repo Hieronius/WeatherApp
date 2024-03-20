@@ -12,6 +12,7 @@
 		DD966A6E2BAA838D00F3B014 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD966A6D2BAA838D00F3B014 /* WeatherViewController.swift */; };
 		DD966A732BAA839100F3B014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD966A722BAA839100F3B014 /* Assets.xcassets */; };
 		DD966A882BAA90AA00F3B014 /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD966A872BAA90AA00F3B014 /* GenericViewController.swift */; };
+		DD966A8A2BAA90E600F3B014 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD966A892BAA90E600F3B014 /* WeatherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DD966A722BAA839100F3B014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD966A772BAA839100F3B014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD966A872BAA90AA00F3B014 /* GenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
+		DD966A892BAA90E600F3B014 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		DD966A842BAA8D4000F3B014 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DD966A892BAA90E600F3B014 /* WeatherView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD966A8A2BAA90E600F3B014 /* WeatherView.swift in Sources */,
 				DD966A6E2BAA838D00F3B014 /* WeatherViewController.swift in Sources */,
 				DD966A6A2BAA838D00F3B014 /* AppDelegate.swift in Sources */,
 				DD966A882BAA90AA00F3B014 /* GenericViewController.swift in Sources */,
