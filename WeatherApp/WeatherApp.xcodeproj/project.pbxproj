@@ -13,6 +13,9 @@
 		DD966A732BAA839100F3B014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD966A722BAA839100F3B014 /* Assets.xcassets */; };
 		DD966A882BAA90AA00F3B014 /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD966A872BAA90AA00F3B014 /* GenericViewController.swift */; };
 		DD966A8A2BAA90E600F3B014 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD966A892BAA90E600F3B014 /* WeatherView.swift */; };
+		DD966A8C2BAA92EB00F3B014 /* APIKeyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD966A8B2BAA92EB00F3B014 /* APIKeyService.swift */; };
+		DD966A8E2BAA971C00F3B014 /* CoordinateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD966A8D2BAA971C00F3B014 /* CoordinateService.swift */; };
+		DD966A902BAA978000F3B014 /* APIEndPointService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD966A8F2BAA978000F3B014 /* APIEndPointService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		DD966A772BAA839100F3B014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD966A872BAA90AA00F3B014 /* GenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
 		DD966A892BAA90E600F3B014 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		DD966A8B2BAA92EB00F3B014 /* APIKeyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeyService.swift; sourceTree = "<group>"; };
+		DD966A8D2BAA971C00F3B014 /* CoordinateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateService.swift; sourceTree = "<group>"; };
+		DD966A8F2BAA978000F3B014 /* APIEndPointService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndPointService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,9 @@
 		DD966A7F2BAA86FB00F3B014 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				DD966A8B2BAA92EB00F3B014 /* APIKeyService.swift */,
+				DD966A8D2BAA971C00F3B014 /* CoordinateService.swift */,
+				DD966A8F2BAA978000F3B014 /* APIEndPointService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -220,7 +229,10 @@
 				DD966A6E2BAA838D00F3B014 /* WeatherViewController.swift in Sources */,
 				DD966A6A2BAA838D00F3B014 /* AppDelegate.swift in Sources */,
 				DD966A882BAA90AA00F3B014 /* GenericViewController.swift in Sources */,
+				DD966A8E2BAA971C00F3B014 /* CoordinateService.swift in Sources */,
+				DD966A8C2BAA92EB00F3B014 /* APIKeyService.swift in Sources */,
 				DD966A6C2BAA838D00F3B014 /* SceneDelegate.swift in Sources */,
+				DD966A902BAA978000F3B014 /* APIEndPointService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
