@@ -136,11 +136,11 @@
 		DD966A7F2BAA86FB00F3B014 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				DD966A8B2BAA92EB00F3B014 /* APIKeyService.swift */,
-				DD966A8F2BAA978000F3B014 /* APIEndPointService.swift */,
-				DD966A8D2BAA971C00F3B014 /* CoordinateService.swift */,
 				DDAA69382BABBD4F0069254F /* WeatherFetcherService.swift */,
 				DDAA693E2BABC4200069254F /* JSONParserService.swift */,
+				DD966A8F2BAA978000F3B014 /* APIEndPointService.swift */,
+				DD966A8D2BAA971C00F3B014 /* CoordinateService.swift */,
+				DD966A8B2BAA92EB00F3B014 /* APIKeyService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
