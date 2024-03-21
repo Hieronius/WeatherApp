@@ -1,6 +1,6 @@
 import Foundation
 
-// MARK: - WeatherData
+// MARK: - WeatherRawData
 struct WeatherRawData: Codable {
     let lat, lon: Double
     let timezone: String
