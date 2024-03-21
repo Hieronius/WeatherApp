@@ -4,6 +4,7 @@ struct APIEndpointService {
     static let baseURL = "https://api.openweathermap.org/data/3.0/onecall"
     
     // Method to generate an endpoint URL based on latitude, longitude, and exclude parameter
+    // Result<URL, Error> - it's an ENUM with .success/.failure cases by default
     static func generateEndpointURL(latitude: Double, longitude: Double, exclude: String) -> Result<URL, Error> {
         
         // Check if the coordinates are valid using CoordinateService
