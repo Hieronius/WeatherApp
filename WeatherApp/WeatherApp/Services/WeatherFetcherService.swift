@@ -4,7 +4,7 @@ struct WeatherFetcherService {
     static func fetchWeather(latitude: Double, longitude: Double, completionHandler: @escaping (Result<Weather, Error>) -> Void) {
         
         // Generate the endpoint URL
-        let urlResult = APIEndpointService.generateEndpointURL(latitude: latitude, longitude: longitude, exclude: "minutely,hourly")
+        let urlResult = APIEndpointService.generateEndpointURL(latitude: latitude, longitude: longitude, exclude: "minutely,hourly,alerts")
         
         // Check if the result is a success
         if case let .success(url) = urlResult {
