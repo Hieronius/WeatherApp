@@ -8,12 +8,11 @@ struct JSONParserService {
         
         do {
             let weatherData = try decoder.decode(WeatherData.self, from: data)
-            guard let weather = Weather(weatherData: weatherData) else {
-                return nil
-            }
-            return weather
-        } catch let error as NSError {
-            print(String(describing: error))
+            // Ensure that the decoding operation succeeded and return the Weather object
+            return Weather(weatherData: weatherData)
+        } catch {
+            // Handle any errors that occur during JSON decoding
+            print("Error decoding JSON:", error.localizedDescription)
             return nil
         }
     }
