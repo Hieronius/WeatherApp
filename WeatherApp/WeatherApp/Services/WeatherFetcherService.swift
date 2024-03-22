@@ -1,6 +1,7 @@
 import Foundation
 
 struct WeatherFetcherService {
+    
     static func fetchWeather(latitude: Double, longitude: Double, completionHandler: @escaping (Result<WeatherCookedData, Error>) -> Void) {
         
         // Generate the endpoint URL

@@ -176,8 +176,8 @@
 		DD966A832BAA8D3D00F3B014 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DDAA693A2BABC3E50069254F /* WeatherCookedData.swift */,
 				DDAA693C2BABC3EF0069254F /* WeatherRawData.swift */,
+				DDAA693A2BABC3E50069254F /* WeatherCookedData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";

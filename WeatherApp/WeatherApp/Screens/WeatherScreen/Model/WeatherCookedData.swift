@@ -24,6 +24,8 @@ struct Temperature {
     let max: Double
 }
 
+// MARK: Custom Init
+// So, we won't lose the default one
 extension WeatherCookedData {
     init(from weatherRawData: WeatherRawData) {
         self.latitude = weatherRawData.lat
@@ -36,8 +38,8 @@ extension WeatherCookedData {
         self.weekWeatherForecast = weatherRawData.daily.map { dailyData in
             return DailyCookedData(date: Date(timeIntervalSince1970: TimeInterval(dailyData.dt)),
                                    temperature: Temperature(day: dailyData.temp.day,
-                                                           min: dailyData.temp.min,
-                                                           max: dailyData.temp.max),
+                                                            min: dailyData.temp.min,
+                                                            max: dailyData.temp.max),
                                    cloudiness: dailyData.weather.first?.description ?? "",
                                    windSpeed: dailyData.windSpeed)
         }
