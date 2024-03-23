@@ -24,24 +24,24 @@ struct WeatherCookedData {
 
 extension WeatherCookedData {
     init(rawData: WeatherRawData) {
-        cityName = rawData.name
-        temperature = rawData.main.temp
-        feelsLikeTemperature = rawData.main.feelsLike
-        minTemperature = rawData.main.tempMin
-        maxTemperature = rawData.main.tempMax
-        pressure = rawData.main.pressure
-        humidity = rawData.main.humidity
-        visibility = rawData.visibility
-        windSpeed = rawData.wind.speed
-        windDegree = rawData.wind.deg
-        windGust = rawData.wind.gust
-        weatherDescription = rawData.weather.first?.description ?? ""
-        weatherIcon = rawData.weather.first?.icon ?? ""
-        cloudiness = rawData.clouds.all
-        rain1h = rawData.rain.the1H
-        sunrise = rawData.sys.sunrise
-        sunset = rawData.sys.sunset
-        countryCode = rawData.sys.country
+        self.cityName = rawData.name ?? "optionalValue"
+        self.temperature = rawData.main?.temp ?? 0.0
+        self.feelsLikeTemperature = rawData.main?.feelsLike ?? 0.0
+        self.minTemperature = rawData.main?.tempMin ?? 0.0
+        self.maxTemperature = rawData.main?.tempMax ?? 0.0
+        self.pressure = rawData.main?.pressure ?? 0
+        self.humidity = rawData.main?.humidity ?? 0
+        self.visibility = rawData.visibility ?? 0
+        self.windSpeed = rawData.wind?.speed ?? 0.0
+        self.windDegree = rawData.wind?.deg ?? 0
+        self.windGust = rawData.wind?.gust ?? 0.0
+        self.weatherDescription = rawData.weather?.first?.description ?? "optionalValue"
+        self.weatherIcon = rawData.weather?.first?.icon ?? "optionalValue"
+        self.cloudiness = rawData.clouds?.all ?? 0
+        self.rain1h = rawData.rain?.the1H ?? 0.0
+        self.sunrise = rawData.sys?.sunrise ?? 0
+        self.sunset = rawData.sys?.sunset ?? 0
+        self.countryCode = rawData.sys?.country ?? "optionalValue"
     }
 }
 
