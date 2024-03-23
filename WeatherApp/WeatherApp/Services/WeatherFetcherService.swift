@@ -38,7 +38,7 @@ struct WeatherFetcherService {
                     print("Failed to convert data to string")
                 }
                 
-                // Parse the JSON data into Weather object
+                // Parse the JSON data into WeatherCookedData object
                 if let weather =  JSONParserService.parseJSON(withData: data) {
                     // Call the completion handler with the weather data
                     completionHandler(.success(weather))
