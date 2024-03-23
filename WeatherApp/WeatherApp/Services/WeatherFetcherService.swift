@@ -31,6 +31,13 @@ struct WeatherFetcherService {
                     return
                 }
                 
+                // Print the raw JSON data received from the API
+                if let jsonString = String(data: data, encoding: .utf8) {
+                    print("Raw JSON data received:", jsonString)
+                } else {
+                    print("Failed to convert data to string")
+                }
+                
                 // Parse the JSON data into Weather object
                 if let weather =  JSONParserService.parseJSON(withData: data) {
                     // Call the completion handler with the weather data
@@ -51,3 +58,4 @@ struct WeatherFetcherService {
         }
     }
 }
+
