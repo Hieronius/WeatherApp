@@ -7,6 +7,7 @@ final class WeatherViewController: GenericViewController<WeatherView> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNavigationVC()
         getWeatherData()
     }
     
@@ -25,6 +26,25 @@ final class WeatherViewController: GenericViewController<WeatherView> {
                 print("Error fetching weather data:", error.localizedDescription)
             }
         }
+    }
+    
+    private func setupNavigationVC() {
+        navigationController?.navigationBar.topItem?.title = "City"
+        navigationController?.navigationBar.backgroundColor = .gray
+        
+        let profileButton = UIBarButtonItem(
+            title: "Right",
+            style: .plain,
+            target: self,
+            action: #selector(citySearchButtonTapped))
+        
+        profileButton.tintColor = .white
+        profileButton.image = UIImage(systemName: "magnifyingglass")
+        navigationItem.rightBarButtonItem = profileButton
+    }
+    
+    @objc private func citySearchButtonTapped() {
+        // code here
     }
     
     

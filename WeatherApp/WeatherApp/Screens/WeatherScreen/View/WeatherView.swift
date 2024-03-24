@@ -6,7 +6,7 @@ final class WeatherView: UIView {
     
     init() {
         super.init(frame: .zero)
-        backgroundColor = .green
+        backgroundColor = .darkGray
         // setupViews()
     }
     
