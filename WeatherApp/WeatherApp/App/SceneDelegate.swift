@@ -10,9 +10,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         
+        let viewController = WeatherViewController()
+        
+        let navigationVC = UINavigationController(rootViewController: viewController)
+        
         window?.windowScene = windowScene
         
-        self.window?.rootViewController = WeatherViewController()
+        self.window?.rootViewController = navigationVC
         self.window?.makeKeyAndVisible()
     }
 
