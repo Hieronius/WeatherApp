@@ -4,44 +4,44 @@ final class WeatherView: UIView {
     
     // MARK: - Private Properties
     
-    var weatherContainer: UIView!
-    var weatherStackView: UIStackView!
+    private var weatherContainer: UIView!
+    private var weatherStackView: UIStackView!
     
-    var currentTemperatureStack: UIStackView!
-    var currentTemperatureLabel: UILabel!
-    var currentTemperatureValue: UILabel!
+    private var currentTemperatureStack: UIStackView!
+    private var currentTemperatureLabel: UILabel!
+    private var currentTemperatureValue: UILabel!
     
-    var cloudnessStack: UIStackView!
-    var cloudnessLabel: UILabel!
-    var cloudnessValue: UILabel!
+    private var cloudnessStack: UIStackView!
+    private var cloudnessLabel: UILabel!
+    private var cloudnessValue: UILabel!
     
-    var highestTemperatureStack: UIStackView!
-    var highestTemperatureLabel: UILabel!
-    var highestTemperatureValue: UILabel!
+    private var highestTemperatureStack: UIStackView!
+    private var highestTemperatureLabel: UILabel!
+    private var highestTemperatureValue: UILabel!
     
-    var lowestTemperatureStack: UIStackView!
-    var lowestTemperatureLabel: UILabel!
-    var lowestTemperatureValue: UILabel!
+    private var lowestTemperatureStack: UIStackView!
+    private var lowestTemperatureLabel: UILabel!
+    private var lowestTemperatureValue: UILabel!
     
-    var windSpeedStack: UIStackView!
-    var windSpeedLabel: UILabel!
-    var windSpeedValue: UILabel!
+    private var windSpeedStack: UIStackView!
+    private var windSpeedLabel: UILabel!
+    private var windSpeedValue: UILabel!
     
-    var pressureStack: UIStackView!
-    var pressureLabel: UILabel!
-    var pressureValue: UILabel!
+    private var pressureStack: UIStackView!
+    private var pressureLabel: UILabel!
+    private var pressureValue: UILabel!
     
-    var humidityStack: UIStackView!
-    var humidityLabel: UILabel!
-    var humidityValue: UILabel!
+    private var humidityStack: UIStackView!
+    private var humidityLabel: UILabel!
+    private var humidityValue: UILabel!
     
-    var feelsLikeStack: UIStackView!
-    var feelsLikeLabel: UILabel!
-    var feelsLikeValue: UILabel!
+    private var feelsLikeStack: UIStackView!
+    private var feelsLikeLabel: UILabel!
+    private var feelsLikeValue: UILabel!
     
-    var visibilityStack: UIStackView!
-    var visibilityLabel: UILabel!
-    var visibilityValue: UILabel!
+    private var visibilityStack: UIStackView!
+    private var visibilityLabel: UILabel!
+    private var visibilityValue: UILabel!
     
     // MARK: - Initialization
     
