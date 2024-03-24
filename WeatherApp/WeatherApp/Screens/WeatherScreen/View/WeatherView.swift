@@ -4,7 +4,6 @@ final class WeatherView: UIView {
     
     // MARK: - Private Properties
     
-    private var weatherContainer: UIView!
     private var weatherStackView: UIStackView!
     
     private var currentTemperatureStack: UIStackView!
@@ -58,14 +57,28 @@ final class WeatherView: UIView {
     // MARK: - Private Methods
     
     private func setupViews() {
-        setupWeatherContainerView()
-    }
-    
-    private func setupWeatherContainerView() {
         setupWeatherStackView()
     }
     
     private func setupWeatherStackView() {
+        weatherStackView = UIStackView()
+        weatherStackView.axis = .vertical
+        weatherStackView.spacing = 15
+        weatherStackView.backgroundColor = .red
+        
+        addSubview(weatherStackView)
+        
+        // Disable translatesAutoresizingMaskIntoConstraints to use NSLayoutConstraints
+        weatherStackView.translatesAutoresizingMaskIntoConstraints = false
+
+        // Add constraints using NSLayoutConstraint
+        NSLayoutConstraint.activate([
+            weatherStackView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 15),
+            weatherStackView.leadingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.leadingAnchor, constant: 15),
+            weatherStackView.trailingAnchor.constraint(equalTo: self.safeAreaLayoutGuide.trailingAnchor, constant: -15),
+            weatherStackView.bottomAnchor.constraint(equalTo: self.safeAreaLayoutGuide.bottomAnchor, constant: -15)
+        ])
+        
         setupCurrentTemperatureStack()
         setupCloudnessStack()
         setupHighestTemperatureStack()
@@ -78,7 +91,22 @@ final class WeatherView: UIView {
     }
     
     private func setupCurrentTemperatureStack() {
+        currentTemperatureStack = UIStackView()
+        currentTemperatureStack.axis = .horizontal
+        currentTemperatureStack.spacing = 10
         
+        currentTemperatureLabel = UILabel()
+        
+        currentTemperatureValue = UILabel()
+        
+        currentTemperatureStack.addArrangedSubview(currentTemperatureLabel)
+        currentTemperatureStack.addArrangedSubview(currentTemperatureValue)
+        
+        // constraints for stack content
+        
+        weatherStackView.addArrangedSubview(currentTemperatureStack)
+        
+        // constraints for stack to container
     }
     
     private func setupCloudnessStack() {
